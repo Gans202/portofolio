@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmeren en automatisatie — Thor Arnouts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="border-b border-slate-700">
+        <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-4 py-3 sm:flex-col sm:gap-2 lg:flex-row lg:justify-between">
+            <a href="index.html" class="shrink-0">
+                <img src="images/logo.png" alt="Logo van Thor Arnouts" width="200" height="200" class="size-12 rounded-full">
+            </a>
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop" class="cursor-pointer rounded-lg border border-slate-500 px-3 py-2 text-slate-200 peer-focus-visible:outline-2 peer-focus-visible:outline-[#26F0E9] sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="sr-only">Menu</span>
+            </label>
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block sm:block sm:w-auto">
+                <ul class="flex flex-col sm:flex-row sm:gap-2">
+                    <li>
+                        <a href="index.html" class="block rounded-lg px-3 py-2 text-slate-200 hover:bg-slate-800 hover:text-[#26F0E9]">Home</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="block rounded-lg px-3 py-2 text-slate-200 hover:bg-slate-800 hover:text-[#26F0E9]">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="project.html" aria-current="page" class="block rounded-lg bg-[#28F088] px-3 py-2 font-semibold text-slate-900">Project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block rounded-lg px-3 py-2 text-slate-200 hover:bg-slate-800 hover:text-[#26F0E9]">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-8 lg:grid-cols-3">
+        <main class="lg:col-span-2">
+            <article>
+                <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">Programmeren en automatisatie</h1>
+                <img src="images/sfeerafbeelding2.png" alt="Persoon die code typt voor twee beeldschermen" width="907" height="488" class="mb-6 aspect-video w-full rounded-lg object-cover">
+                <div class="flex flex-col gap-6 leading-relaxed text-slate-300">
+                    <section>
+                        <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Situatie</h2>
+                        <p>Tijdens mijn opleiding Systeem- en netwerkbeheer aan de AP-hogeschool werkte ik aan dit onderwerp: programmeren en automatisatie.</p>
+                    </section>
+                    <section>
+                        <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Aanpak</h2>
+                        <p>Nog in te vullen voor later </p>
+                    </section>
+                    <section>
+                        <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Resultaat</h2>
+                        <p>Nog in te vullen voor later </p>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+        <aside class="border-t border-slate-700 pt-6 lg:border-t-0 lg:border-l lg:pl-8 lg:pt-0 lg:self-start">
+            <nav aria-label="Kruimelpad">
+                <ol class="flex flex-wrap gap-2 text-sm text-slate-300">
+                    <li><a href="index.html" class="text-[#80C7EF] underline hover:text-[#26F0E9]">home</a></li>
+                    <li aria-hidden="true">&gt;</li>
+                    <li><a href="portfolio.html" class="text-[#80C7EF] underline hover:text-[#26F0E9]">projecten</a></li>
+                    <li aria-hidden="true">&gt;</li>
+                    <li aria-current="page">project 6</li>
+                </ol>
+            </nav>
+        </aside>
+    </div>
+
+    <footer class="border-t border-slate-700">
+        <div class="mx-auto flex max-w-6xl justify-end px-4 py-4 text-sm text-slate-400">
+            <p>&copy; 2026 Thor Arnouts</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Thor Arnouts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="border-b border-slate-700">
+        <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-4 py-3 sm:flex-col sm:gap-2 lg:flex-row lg:justify-between">
+            <a href="index.html" class="shrink-0">
+                <img src="images/logo.png" alt="Logo van Thor Arnouts" width="200" height="200" class="size-12 rounded-full">
+            </a>
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop" class="cursor-pointer rounded-lg border border-slate-500 px-3 py-2 text-slate-200 peer-focus-visible:outline-2 peer-focus-visible:outline-[#26F0E9] sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="sr-only">Menu</span>
+            </label>
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block sm:block sm:w-auto">
+                <ul class="flex flex-col sm:flex-row sm:gap-2">
+                    <li>
+                        <a href="index.html" class="block rounded-lg px-3 py-2 text-slate-200 hover:bg-slate-800 hover:text-[#26F0E9]">Home</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" aria-current="page" class="block rounded-lg bg-[#28F088] px-3 py-2 font-semibold text-slate-900">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="block rounded-lg px-3 py-2 text-slate-200 hover:bg-slate-800 hover:text-[#26F0E9]">Project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block rounded-lg px-3 py-2 text-slate-200 hover:bg-slate-800 hover:text-[#26F0E9]">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-8 lg:grid-cols-3">
+        <main class="lg:col-span-2">
+            <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">Portfolio</h1>
+            <section class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="overflow-hidden rounded-lg border border-slate-700 bg-slate-800 hover:border-[#26F0E9]">
+                    <img src="images/Zabbix.png" alt="Zabbix default dashboard" width="1167" height="720" class="aspect-video w-full object-cover">
+                    <div class="p-4">
+                        <h2 class="mb-1 text-lg font-semibold text-white"><a href="project.html" class="hover:text-[#26F0E9]">Netwerkmonitoring met Zabbix</a></h2>
+                        <p class="text-sm leading-relaxed text-slate-300">Een netwerk opvolgen en bewaken met Zabbix.</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden rounded-lg border border-slate-700 bg-slate-800 hover:border-[#26F0E9]">
+                    <img src="images/sfeerafbeelding2.png" alt="Persoon die code typt voor twee beeldschermen" width="907" height="488" class="aspect-video w-full object-cover">
+                    <div class="p-4">
+                        <h2 class="mb-1 text-lg font-semibold text-white"><a href="project2.html" class="hover:text-[#26F0E9]">Netwerkanalyse met Wireshark</a></h2>
+                        <p class="text-sm leading-relaxed text-slate-300">Netwerkverkeer onderzoeken en analyseren.</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden rounded-lg border border-slate-700 bg-slate-800 hover:border-[#26F0E9]">
+                    <img src="images/sfeerafbeelding1.png" alt="Rijen zwarte serverkasten in een donker datacenter" width="1118" height="576" class="aspect-video w-full object-cover">
+                    <div class="p-4">
+                        <h2 class="mb-1 text-lg font-semibold text-white"><a href="project3.html" class="hover:text-[#26F0E9]">Virtualisatie met VMware</a></h2>
+                        <p class="text-sm leading-relaxed text-slate-300">Virtuele machines opzetten en beheren.</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden rounded-lg border border-slate-700 bg-slate-800 hover:border-[#26F0E9]">
+                    <img src="images/sfeerafbeelding1.png" alt="Rijen zwarte serverkasten in een donker datacenter" width="1118" height="576" class="aspect-video w-full object-cover">
+                    <div class="p-4">
+                        <h2 class="mb-1 text-lg font-semibold text-white"><a href="project4.html" class="hover:text-[#26F0E9]">datacom en netwerken</a></h2>
+                        <p class="text-sm leading-relaxed text-slate-300"> webwiz opdracht.</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden rounded-lg border border-slate-700 bg-slate-800 hover:border-[#26F0E9]">
+                    <img src="images/sfeerafbeelding3.png" alt="Netwerkverbindingen met iconen over een serverrek" width="602" height="397" class="aspect-video w-full object-cover">
+                    <div class="p-4">
+                        <h2 class="mb-1 text-lg font-semibold text-white"><a href="project5.html" class="hover:text-[#26F0E9]">Routering en Switching</a></h2>
+                        <p class="text-sm leading-relaxed text-slate-300"> opdracht Topdesign</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden rounded-lg border border-slate-700 bg-slate-800 hover:border-[#26F0E9]">
+                    <img src="images/sfeerafbeelding2.png" alt="Persoon die code typt voor twee beeldschermen" width="907" height="488" class="aspect-video w-full object-cover">
+                    <div class="p-4">
+                        <h2 class="mb-1 text-lg font-semibold text-white"><a href="project6.html" class="hover:text-[#26F0E9]">Scripting</a></h2>
+                        <p class="text-sm leading-relaxed text-slate-300">Windows server en client automatisch instellen door een powershell script</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <aside class="border-t border-slate-700 pt-6 lg:border-t-0 lg:border-l lg:pl-8 lg:pt-0">
+            <img src="images/foto.jpg" alt="Portretfoto van Thor Arnouts" width="1109" height="1932" class="mb-4 hidden w-full rounded-lg object-cover lg:block lg:aspect-[3/4]">
+            <h2 class="mb-2 text-lg font-semibold text-[#80C7EF]">Mijn projecten</h2>
+            <p class="leading-relaxed text-slate-300">Een selectie van onderwerpen waar ik tijdens mijn opleiding Systeem- en netwerkbeheer mee werkte.</p>
+        </aside>
+    </div>
+
+    <footer class="border-t border-slate-700">
+        <div class="mx-auto flex max-w-6xl justify-end px-4 py-4 text-sm text-slate-400">
+            <p>&copy; 2026 Thor Arnouts</p>
+        </div>
+    </footer>
+</body>
+</html>
