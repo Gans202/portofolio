@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Thor Arnouts</title>
+    <meta name="description" content="Stuur Thor Arnouts, student Systeem- en netwerkbeheer, een bericht over een stage, een project of een vraag.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -45,19 +45,29 @@
 
     <div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4 py-8 lg:grid-cols-3">
         <main class="lg:col-span-2">
-            <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">Contact</h1>
-            <form class="flex max-w-md flex-col gap-6">
+            <h1 class="mb-2 text-3xl font-semibold tracking-tight text-white md:text-4xl">Contact</h1>
+            <p class="mb-6 text-slate-300">Velden met een <span class="text-[#28F088]" aria-hidden="true">*</span> zijn verplicht.</p>
+
+            <form name="contact" method="POST" data-netlify="true" class="flex max-w-md flex-col gap-6">
                 <div class="flex flex-col gap-1">
-                    <label for="naam" class="font-semibold text-slate-200">Naam</label>
-                    <input type="text" id="naam" name="naam" autocomplete="name" class="rounded-lg border border-slate-600 bg-slate-800 px-3 py-3 text-white focus:border-[#26F0E9]">
+                    <label for="naam" class="font-semibold text-slate-200">Naam <span class="text-[#28F088]" aria-hidden="true">*</span></label>
+                    <input type="text" id="naam" name="naam" autocomplete="name" required class="rounded-lg border border-slate-600 bg-slate-800 px-3 py-3 text-white focus:border-[#26F0E9]">
                 </div>
                 <div class="flex flex-col gap-1">
-                    <label for="mail" class="font-semibold text-slate-200">Mail</label>
-                    <input type="email" id="mail" name="mail" autocomplete="email" class="rounded-lg border border-slate-600 bg-slate-800 px-3 py-3 text-white focus:border-[#26F0E9]">
+                    <label for="mail" class="font-semibold text-slate-200">Mail <span class="text-[#28F088]" aria-hidden="true">*</span></label>
+                    <input type="email" id="mail" name="email" autocomplete="email" required class="rounded-lg border border-slate-600 bg-slate-800 px-3 py-3 text-white focus:border-[#26F0E9]">
                 </div>
                 <div class="flex flex-col gap-1">
                     <label for="tel" class="font-semibold text-slate-200">Tel</label>
                     <input type="tel" id="tel" name="tel" autocomplete="tel" class="rounded-lg border border-slate-600 bg-slate-800 px-3 py-3 text-white focus:border-[#26F0E9]">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label for="bericht" class="font-semibold text-slate-200">Je bericht <span class="text-[#28F088]" aria-hidden="true">*</span></label>
+                    <textarea id="bericht" name="bericht" rows="5" required class="rounded-lg border border-slate-600 bg-slate-800 px-3 py-3 text-white focus:border-[#26F0E9]"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="rounded-lg bg-[#28F088] px-5 py-2 font-semibold text-slate-900 hover:bg-[#26F0E9]">Verstuur</button>
+                    <p class="mt-3 text-sm text-slate-400">Ik gebruik je gegevens enkel om je te antwoorden.</p>
                 </div>
             </form>
         </main>
