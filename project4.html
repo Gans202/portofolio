@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automatisatie met TIA Portal — Thor Arnouts</title>
+    <title>Webwiz opdracht Datacom & Netwerken — Thor Arnouts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -46,20 +45,37 @@
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-8 lg:grid-cols-3">
         <main class="lg:col-span-2">
             <article>
-                <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">Automatisatie met TIA Portal</h1>
-                <img src="images/sfeerafbeelding1.png" alt="Rijen zwarte serverkasten in een donker datacenter" width="1118" height="576" class="mb-6 aspect-video w-full rounded-lg object-cover">
+                <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">Webwiz opdracht Datacom & Netwerken</h1>
+                <img src="images/webwiz.png" alt="Webwiz opdracht physical view" width="1118" height="576" class="mb-6 aspect-video w-full rounded-lg object-cover">
                 <div class="flex flex-col gap-6 leading-relaxed text-slate-300">
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Situatie</h2>
-                        <p>Tijdens mijn opleiding Systeem- en netwerkbeheer aan de AP-hogeschool werkte ik met TIA Portal.</p>
+                        <p>Webwiz is een groeiend bedrijf dat een nieuw kantoorgebouw betrekt, met een gelijkvloers en een eerste verdieping. Er werken 24 mensen, verdeeld over 6 kantoren. Elke werkplek heeft een computer en een VoIP-telefoon, en in elk kantoor staat een multifunctionele printer. Het bedrijf heeft 20 desktops, 10 laptops (waarvan 6 uitleenbare flexi-laptops die draadloos moeten werken) en 2 servers waar enkel gemachtigde mensen fysiek toegang toe mogen hebben.</p>
+                        <p class="mt-3">Het eerste voorstel voor het netwerk voldeed aan alle eisen, maar hield geen rekening met gestructureerd bekabelen. Alle toestellen waren rechtstreeks met een switch verbonden. Dat zorgt voor een kluwen van kabels, onduidelijkheid over welke kabel waar naartoe gaat en problemen bij elke aanpassing. Mijn opdracht was een netwerk uit te tekenen volgens de principes van gestructureerd bekabelen, in duo met een medestudent.</p>
                     </section>
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Aanpak</h2>
-                        <p>Nog in te vullen voor later </p>
+                        <p class="mb-3">Ik werkte het ontwerp uit in Packet Tracer, vertrekkend van een startbestand met de plattegrond van het gebouw. Ik werkte in stappen:</p>
+                        <ul class="flex list-disc flex-col gap-1 pl-5">
+                            <li><span class="font-semibold text-white">Aansluitpunten bepalen:</span> berekend hoeveel aansluitpunten er nodig zijn voor computers, VoIP-telefoons en printers, met een marge voor toekomstige uitbreiding.</li>
+                            <li><span class="font-semibold text-white">Outlets en patchpanelen:</span> wandaansluitingen (outlets) bij de eindgebruikers voorzien en patchpanelen in het rack, zodat de kabels vast liggen en toestellen in het rack worden omgeschakeld.</li>
+                            <li><span class="font-semibold text-white">Afgesloten rackruimte:</span> de switches in een rack in een afgesloten kamer geplaatst, zodat enkel gemachtigde personen er aan kunnen.</li>
+                            <li><span class="font-semibold text-white">Afstanden en kabeltype:</span> rekening gehouden met de af te leggen afstanden om het kabeltype en de plaats van het rack te bepalen.</li>
+                            <li><span class="font-semibold text-white">Bekabelingsplan:</span> het plan in Packet Tracer uitgetekend met bend points, zodat de kabels netjes langs de muren lopen.</li>
+                            <li><span class="font-semibold text-white">Rack en patchplan:</span> uitgewerkt welke toestellen in het rack komen, hoeveel U ze innemen en hoe de patchpanelen en switches verbonden zijn.</li>
+                            <li><span class="font-semibold text-white">Controle:</span> het ontwerp getest aan de praktische scenario's, zoals een nieuwe werkplek, extra wifi en een nieuwe printer.</li>
+                        </ul>
                     </section>
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Resultaat</h2>
-                        <p>Nog in te vullen voor later </p>
+                        <p class="mb-3">Het resultaat is een gestructureerd bekabeld netwerk dat voldoet aan de eisen van Webwiz en eenvoudig uit te breiden en te beheren is.</p>
+                        <ul class="flex list-disc flex-col gap-1 pl-5">
+                            <li>Elke werkplek en elke printer heeft een eigen aansluitpunt (outlet), en alle bekabeling komt samen in één afgesloten rackruimte.</li>
+                            <li>De flexi-laptops werken draadloos via access points.</li>
+                            <li>Een extra toestel aansluiten is eenvoudig: je patcht het in het rack en trekt geen nieuwe kabel.</li>
+                            <li>Dankzij de patchpanelen en duidelijke verbindingen weet je welke kabel waar naartoe gaat, waardoor je problemen sneller opspoort.</li>
+                            <li>Enkel gemachtigden hebben toegang tot de switches en servers, en er liggen geen losse kabels meer op de werkplekken.</li>
+                        </ul>
                     </section>
                 </div>
             </article>

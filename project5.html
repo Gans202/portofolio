@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netwerkbeheer — Thor Arnouts</title>
+    <title>opdracht Topdesign Routering & Switching — Thor Arnouts</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -46,20 +45,35 @@
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-8 lg:grid-cols-3">
         <main class="lg:col-span-2">
             <article>
-                <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">Netwerkbeheer</h1>
-                <img src="images/sfeerafbeelding3.png" alt="Netwerkverbindingen met iconen over een serverrek" width="602" height="397" class="mb-6 aspect-video w-full rounded-lg object-cover">
+                <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">opdracht Topdesign Routering & Switching</h1>
+                <img src="images/Topdesign.png" alt="opdracht Topdesign Routering & Switching" width="602" height="397" class="mb-6 aspect-video w-full rounded-lg object-cover">
                 <div class="flex flex-col gap-6 leading-relaxed text-slate-300">
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Situatie</h2>
-                        <p>Tijdens mijn opleiding Systeem- en netwerkbeheer aan de AP-hogeschool werkte ik aan dit onderwerp: netwerkbeheer.</p>
+                        <p>De firma Topdesign had al een netwerk met meerdere switches, VLAN's en een router-on-a-stick-configuratie, waarin de basis switching al klaarstond. Mijn opdracht was dit netwerk in Packet Tracer verder uit te bouwen: de endpoints automatisch een adres laten krijgen, de interne toestellen toegang geven tot het internet en het verkeer beperken met toegangslijsten (ACL's).</p>
                     </section>
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Aanpak</h2>
-                        <p>Nog in te vullen voor later </p>
+                        <p class="mb-3">Ik werkte verder in het gegeven Packet Tracer-bestand en richtte de edge router in. Ik werkte in stappen:</p>
+                        <ul class="flex list-disc flex-col gap-1 pl-5">
+                            <li><span class="font-semibold text-white">DHCP:</span> van de edge router een DHCP-server gemaakt met een aparte pool per VLAN (vlan10 t/m vlan60). Adressen die al in gebruik zijn, zoals de servers, de NAS en de routerinterface, sloot ik uit de pool uit. Naast het IP-adres gaf ik ook de standaardgateway mee.</li>
+                            <li><span class="font-semibold text-white">Endpoints controleren:</span> alle pc's op dynamisch gezet en nagegaan of ze een adres uit de juiste pool krijgen, ook de wifi-tablet en de IP-telefoons.</li>
+                            <li><span class="font-semibold text-white">NAT overloading:</span> alle interne adressen (172.16.x.x) vertaald naar het publieke WAN-adres van de router. Hiervoor gebruikte ik ACL 1 met een wildcardmasker, de subinterfaces als inside en de WAN-interface als outside.</li>
+                            <li><span class="font-semibold text-white">Toegang tot beheer:</span> een standard ACL 20 met host statements, zodat SSH-toegang enkel mogelijk is vanaf de management laptop, afgesloten met een expliciete deny any om statistieken te zien.</li>
+                            <li><span class="font-semibold text-white">Wifi en vergaderzaal afschermen:</span> een named ACL (secure_from_40_60) met wildcardmasker die verkeer van VLAN 40 en 60 enkel naar buiten toelaat, en al het andere verkeer doorlaat. Ik koppelde ze aan de juiste subinterfaces, dicht bij de bron.</li>
+                            <li><span class="font-semibold text-white">Testen en documenteren:</span> alles getest met een testplan en in simulatiemode gezocht naar waarom iets lukte of niet lukte, en commentaar toegevoegd aan de topologie.</li>
+                        </ul>
                     </section>
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Resultaat</h2>
-                        <p>Nog in te vullen voor later </p>
+                        <p class="mb-3">Het netwerk van Topdesign configureert zijn endpoints nu automatisch, heeft toegang tot het internet en is beveiligd volgens de eisen.</p>
+                        <ul class="flex list-disc flex-col gap-1 pl-5">
+                            <li>Alle endpoints krijgen automatisch een adres met gateway uit de pool van hun eigen VLAN.</li>
+                            <li>Alle interne VLAN's kunnen online via één publiek adres, dankzij NAT overloading.</li>
+                            <li>De hosts op het wifi-netwerk en in de vergaderzaal kunnen enkel surfen en bereiken de interne bedrijfsmiddelen niet.</li>
+                            <li>Het beheer van de switches is beperkt tot de management laptop.</li>
+                            <li>In mijn testplan staat wat wel en niet lukt, met een verklaring voor elk resultaat.</li>
+                        </ul>
                     </section>
                 </div>
             </article>

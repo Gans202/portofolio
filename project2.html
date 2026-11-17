@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="border-b border-slate-700">
@@ -47,19 +46,33 @@
         <main class="lg:col-span-2">
             <article>
                 <h1 class="mb-6 text-3xl font-semibold tracking-tight text-white md:text-4xl">Netwerkanalyse met Wireshark</h1>
-                <img src="images/sfeerafbeelding2.png" alt="Persoon die code typt voor twee beeldschermen" width="907" height="488" class="mb-6 aspect-video w-full rounded-lg object-cover">
+                <img src="images/Wireshark.png" alt="wireshark bestand geopend" width="907" height="488" class="mb-6 aspect-video w-full rounded-lg object-cover">
                 <div class="flex flex-col gap-6 leading-relaxed text-slate-300">
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Situatie</h2>
-                        <p>Tijdens mijn opleiding Systeem- en netwerkbeheer aan de AP-hogeschool werkte ik met Wireshark.</p>
+                        <p>Tijdens mijn opleiding Systeem- en netwerkbeheer aan de AP-hogeschool werkte ik met Wireshark, een programma om netwerkverkeer te analyseren. Een netwerk verstuurt voortdurend data in kleine pakketten. Om problemen op te sporen of te begrijpen hoe het verkeer werkt, moet je kunnen zien wat er precies wordt verstuurd en waarheen.</p>
                     </section>
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Aanpak</h2>
-                        <p>Nog in te vullen voor later </p>
+                        <p class="mb-3">Ik leerde met Wireshark pakketten te vangen en er de nodige informatie uit te halen. Ik werkte in stappen:</p>
+                        <ul class="flex list-disc flex-col gap-1 pl-5">
+                           <li><span class="font-semibold text-white">Pakketten vangen:</span> een capture gestart op mijn netwerkadapter en pakketten opgevangen terwijl er verkeer was.</li>
+                            <li><span class="font-semibold text-white">Pakketten bekijken:</span> afzonderlijke pakketten geopend en laag per laag bekeken.</li>
+                            <li><span class="font-semibold text-white">De header lezen:</span> afgelezen waar het pakket vandaan komt (bron) en waar het naartoe gaat (bestemming).</li>
+                            <li><span class="font-semibold text-white">De payload bekijken:</span> gekeken naar de inhoud van het pakket, de eigenlijke data die verstuurd wordt.</li>
+                            <li><span class="font-semibold text-white">De laag bepalen:</span> nagegaan op welke laag van het netwerkmodel een pakket of protocol zich bevindt.</li> 
+                        </ul>
                     </section>
                     <section>
                         <h2 class="mb-2 text-xl font-semibold text-[#80C7EF]">Resultaat</h2>
-                        <p>Nog in te vullen voor later </p>
+                        <p class="mb-3">Ik kan netwerkverkeer vangen en er de belangrijkste gegevens uit halen.</p>
+                        <ul class="flex list-disc flex-col gap-1 pl-5">
+                            <li>Ik kan pakketten vangen en bekijken met Wireshark.</li>
+                            <li>Ik kan in de header zien van wie een pakket komt en voor wie het bestemd is.</li>
+                            <li>Ik kan de payload van een pakket bekijken.</li>
+                            <li>Ik kan bepalen op welke laag een pakket of protocol zich bevindt.</li>
+                            <li>Dat helpt me om netwerkverkeer te begrijpen en fouten op te sporen, en is een belangrijke basisvaardigheid voor netwerkbeheer.</li>
+                        </ul>
                     </section>
                 </div>
             </article>
